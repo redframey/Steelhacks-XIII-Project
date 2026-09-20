@@ -2,7 +2,7 @@
 Lemonade Lad's Project
 
 # Purpose
-The purpose of this project is to help educate children or tweens, learn the basics of financial literacy through a game format, where the user runs a lemonade stand.
+The purpose of this project is to help educate children about the basics of financial literacy. They learn through a game format, where the user runs a lemonade stand.
 
 ## Installation
 
