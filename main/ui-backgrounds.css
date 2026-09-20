@@ -1,0 +1,68 @@
+
+button, input, label, h1, h2, p, strong,
+.menu, .topbar, .toolbar, .player-info, .dialogue-box, .choices, .field-group {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+
+#titleHeading   { background-image: url("assets/ui-panel-fitted.png?v=e31dde94"); }
+#newGameButton  { background-image: url("assets/ui-panel-fitted.png?v=e31dde94"); }
+#loadGameButton { background-image: url("assets/ui-panel-fitted.png?v=e31dde94"); }
+
+
+#setupHeading    { background-image: url("assets/ui-panel-fitted.png?v=e31dde94"); }
+
+#nameField       { background-image: url("assets/ui-panel-fitted.png?v=e31dde94"); }
+#goalField       { background-image: url("assets/ui-panel-fitted.png?v=e31dde94"); }
+#openStandButton { background-image: url("assets/ui-panel-fitted.png?v=e31dde94"); }
+#backButton      { background-image: url("assets/ui-panel-fitted.png?v=e31dde94"); }
+
+
+#playerInfo     { background-image: url("assets/ui-panel-fitted.png?v=e31dde94"); }
+#playerLabel    { background-image: url("assets/ui-panel-fitted.png?v=e31dde94"); }
+#moneyLabel     { background-image: url("assets/ui-panel-fitted.png?v=e31dde94"); }
+#balanceLabel   { background-image: url("assets/ui-panel-fitted.png?v=e31dde94"); }
+
+#saveButton     { background-image: url("assets/ui-panel-fitted.png?v=e31dde94"); }
+#downloadButton { background-image: url("assets/ui-panel-fitted.png?v=e31dde94"); }
+#audioButton    { background-image: url("assets/ui-panel-fitted.png?v=e31dde94"); }
+#titleButton    { background-image: url("assets/ui-panel-fitted.png?v=e31dde94"); }
+
+
+#customerNumber { background-image: url("assets/ui-panel-fitted.png?v=e31dde94"); }
+#eventDialogue  { background-image: url("assets/ui-panel-fitted.png?v=e31dde94"); }
+#customerName   { background-image: url("assets/ui-panel-fitted.png?v=e31dde94"); }
+#questionText   { background-image: url("assets/ui-panel-fitted.png?v=e31dde94"); }
+
+#feedback       { background-image: url("assets/ui-panel-fitted.png?v=e31dde94"); }
+
+
+#questionPanel,
+#questionPanel p,
+#questionPanel h2,
+#questionPanel .choices,
+#eventView,
+#eventView p,
+#customerResponse,
+#customerResponse p {
+  background-image: none;
+}
+
+
+#nextButton,
+#eventNextButton {
+  background-color: transparent;
+  background-image: url("assets/lemon-fitted.png?v=8246a469");
+}
+
+
+#questionPanel #choices button {
+  background-color: #fffdf7;
+  background-image: none;
+}
+
+
+#endPanel       { background-image: url("assets/ui-panel-fitted.png?v=e31dde94"); }
+#endTitleButton { background-image: url("assets/ui-panel-fitted.png?v=e31dde94"); }

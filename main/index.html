@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn with Lemonade!</title>
+    <link rel="icon" href="data:," />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=20260920-source-repair" />
+    <link rel="stylesheet" href="ui-backgrounds.css?v=20260920-source-repair" />
+    <script src="script.js?v=20260920-source-repair" defer></script>
+  </head>
+  <body class="menu-background">
+    <main class="game">
+      <section id="titleScreen" class="menu-screen">
+        <div id="titlePanel" class="menu">
+          <h1 id="titleHeading" tabindex="-1">Learn with Lemonade!</h1>
+          <button id="newGameButton" class="primary" type="button">New game</button>
+          <button id="loadGameButton" type="button" hidden>Load game</button>
+        </div>
+      </section>
+      <section id="setupScreen" class="menu-screen" hidden>
+        <form id="setupForm" class="menu">
+          
+          <h1 id="setupHeading" tabindex="-1">New Game:</h1>
+          
+          <div id="nameField" class="field-group">
+            <label id="nameLabel" for="playerName">Enter Name:</label>
+            <input id="playerName" name="playerName" maxlength="24" autocomplete="given-name" required />
+          </div>
+          <div id="goalField" class="field-group">
+            <label id="goalLabel" for="moneyGoal">How much would you like to make?</label>
+            <div class="money-input">
+
+              <span aria-hidden="true">$</span>
+              <input id="moneyGoal" name="moneyGoal" type="number" min="1" max="1000000" step="1" inputmode="numeric" placeholder="20" aria-label="Money goal in whole US dollars" required />
+            </div>
+          </div>
+          <button id="openStandButton" class="primary" type="submit">Open stand</button>
+          <button id="backButton" type="button">Back to title</button>
+        </form>
+      </section>
+
+     
+      <section id="playScreen" hidden>
+        
+        <img id="standImage" src="assets/stand.png" alt="" aria-hidden="true" draggable="false" />
+        <header id="gameHeader" class="topbar">
+          <button id="titleButton" type="button">Title screen</button>
+          <div id="playerInfo" class="player-info">
+            <strong id="playerLabel"></strong>
+            <p id="moneyLabel" class="small"></p>
+          </div>
+          <strong id="balanceLabel" class="balance-label" aria-live="polite"></strong>
+        </header>
+
+        <div id="customerScreen">
+          
+          <div id="characterScene" class="scene" tabindex="-1" aria-label="Customer arriving">
+            <img id="characterImage" alt="" hidden />
+          </div>
+          <section id="questionPanel" class="question-box comic-bubble" aria-label="Customer question">
+            <div id="questionContent">
+             
+              <p id="customerNumber" class="eyebrow"></p>
+             
+              <h2 id="customerName" tabindex="-1"></h2>
+             
+              <p id="questionText"></p>
+              
+              <div id="choices" class="choices" role="group" aria-label="Choose your reply"></div>
+            </div>
+            <div id="eventView" hidden aria-label="Customer event">
+             
+              <p id="eventDialogue" role="status"></p>
+              <button id="eventNextButton" class="primary" type="button" hidden>Next</button>
+            </div>
+          </section>
+          <section id="customerResponse" hidden tabindex="-1" aria-label="Customer response">
+            
+            <p id="customerResponseText" role="status"></p>
+          </section>
+          <section id="dialoguePanel" class="dialogue-box" aria-label="Customer dialogue">
+          
+            <p id="feedback" role="status"></p>
+            <button id="nextButton" class="primary" type="button" hidden>Next</button>
+          </section>
+        </div>
+
+        <section id="endScreen" class="menu-screen" hidden>
+          <div id="endPanel" class="menu">
+           
+            <button id="endTitleButton" type="button">Back to title</button>
+          </div>
+        </section>
+
+       
+        <div id="gameToolbar" class="toolbar" role="group" aria-label="Game controls">
+          <button id="saveButton" type="button">Save game</button>
+          <button id="downloadButton" type="button">Download Save</button>
+          <button id="audioButton" type="button" aria-pressed="true">Sound: On</button>
+        </div>
+      </section>
+     
+      <p id="statusMessage" class="status-message" role="status"></p>
+    </main>
+  </body>
+</html>
